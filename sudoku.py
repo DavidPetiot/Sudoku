@@ -1,7 +1,5 @@
 
-import Cell as Cell
-import Samples
-
+#import Cell as Cell
 from builtins import range
 
 def find_in_row(grille, line, value):
@@ -53,18 +51,3 @@ def resolver(grille):
     elif zeros > 0: print("blocked")
     else: print("done")
     return res
-
-# Afficher la grille
-#grille = saisir_grille()
-grille = Samples.sudoku_hard
-print("Grille saisie :")
-for ligne in grille:
-    print(ligne)
-#afficher_grille_tkinter(grille_sudoku)
-
-iteration = 0
-while resolver(grille) and iteration < 10:
-    iteration += 1
-    print("Grille after ", iteration, " iteration(s)")
-    for ligne in grille:
-        print(ligne)
