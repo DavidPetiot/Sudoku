@@ -38,10 +38,9 @@ def saisir_grille():
     return grille
 
 
-def afficher_grille_tkinter(grille):
+def afficher_grille(root, grille):
     
     # Creation de la fenetre principale
-    root = tk.Tk()
     root.title("Grille de Sudoku")
 
     # Dimensions de la grille
@@ -74,6 +73,3 @@ def afficher_grille_tkinter(grille):
                     font=("Helvetica", 16),
                     fill="black"
                 )
-
-    # Lancer la boucle principale de Tkinter
-    root.mainloop()
